@@ -1,0 +1,7 @@
+C:\Users\s224672916\source\repos\Traveler\Traveler\bin\Debug\Traveler.exe.config
+C:\Users\s224672916\source\repos\Traveler\Traveler\bin\Debug\Traveler.exe
+C:\Users\s224672916\source\repos\Traveler\Traveler\bin\Debug\Traveler.pdb
+C:\Users\s224672916\source\repos\Traveler\Traveler\obj\Debug\Traveler.csproj.AssemblyReference.cache
+C:\Users\s224672916\source\repos\Traveler\Traveler\obj\Debug\Traveler.csproj.CoreCompileInputs.cache
+C:\Users\s224672916\source\repos\Traveler\Traveler\obj\Debug\Traveler.exe
+C:\Users\s224672916\source\repos\Traveler\Traveler\obj\Debug\Traveler.pdb
