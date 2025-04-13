@@ -17,7 +17,7 @@ The strategy pattern is a design pattern that allows a set of similar algorithms
 This approach allows travellers to change their movement style whenever they want (for example, a warrior can choose to ride a horse or walk). The separation of ways to travel from travel attributes keeps the code clean. The same movement strategy can be easily shared by different travellers.
 
 CLASS DIAGRAM
- 
+ ![Image](https://github.com/user-attachments/assets/154ade8c-629d-40a8-898c-81fc7ed79772)
 
 
 
