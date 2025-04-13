@@ -16,8 +16,13 @@ The factory method simplifies traveller creation by concealing construction deta
 The strategy pattern is a design pattern that allows a set of similar algorithms to be defined and encapsulated in their own classes. It is in charge of how each traveller moves by using distinct movement strategies (like walking, flying, and riding a horse) that follow the Travel abstract class.
 This approach allows travellers to change their movement style whenever they want (for example, a warrior can choose to ride a horse or walk). The separation of ways to travel from travel attributes keeps the code clean. The same movement strategy can be easily shared by different travellers.
 
-CLASS DIAGRAM
+1.3 CLASS DIAGRAM
+
+
+
+
  ![Image](https://github.com/user-attachments/assets/154ade8c-629d-40a8-898c-81fc7ed79772)
+
 
 
 
