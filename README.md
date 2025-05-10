@@ -26,8 +26,9 @@ This approach allows travellers to change their movement style whenever they wan
 
 
 
-SECTION 2
-2.1 TRAVELER
+<h2>SECTION 2</h2>
+
+<b> 2.1 TRAVELER </b>
 
 class Traveler
 {
@@ -52,9 +53,9 @@ class Traveler
     }
     
 }
-2.2 
+<p>2.2 </p>
 
-TRAVELERFACTORY
+<b>TRAVELERFACTORY</b>
 
 abstract class TravelerFactory
 {
