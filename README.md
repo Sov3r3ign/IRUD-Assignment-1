@@ -100,38 +100,43 @@ class Warrior : Traveler
 }
 2.6 
 ASSASSIN
-class Assassin : Traveler
-{
 
-    public Assassin(string name) : base(name)
+    class Assassin : Traveler
     {
+
+     public Assassin(string name) : base(name)
+     {
         travelling = new Walk();
-    }
+     }
     
-}
+    }
 2.7 
 MAGEFACTORY
-class MageFactory : TravelerFactory
-{
 
-    public override Traveler makingTraveler(string name)
+    class MageFactory : TravelerFactory
     {
+
+      public override Traveler makingTraveler(string name)
+      {
         return new Wizard(name);
-    }
+      }
     
-}
+    }
 2.8 
 KNIGHTFACTORY
-class KnightFactory : TravelerFactory
-{
+ 
+     
+     class KnightFactory : TravelerFactory
+      {
 
-    public override Traveler makingTraveler(string name)
-    {
+         public override Traveler makingTraveler(string name)
+       {
         return new Warrior(name);
-    }
+       }
     
-}
+     }
 2.9
+
 ROGUEFACTORY
 class RogueFactory : TravelerFactory
 {
