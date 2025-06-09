@@ -30,74 +30,64 @@ This approach allows travellers to change their movement style whenever they wan
 
 <b> 2.1 TRAVELER </b>
 
-class Traveler
-{
-
-    public Travel travelling;
-    private string Name;
-    public Traveler(string name)
+    class Traveler
     {
+     public Travel travelling;
+     private string Name;
+     public Traveler(string name)
+     {
         this.Name = name;
-    }
-    public Traveler(Travel travelling)
-    {
+     }
+     public Traveler(Travel travelling)
+     {
         this.travelling = travelling;
-    }
-    public void ChangeRoute(Travel strategy)
-    {
+     }
+     public void ChangeRoute(Travel strategy)
+     {
         travelling = strategy;
-    }
-    public void Journeying()
-    {
+     }
+     public void Journeying()
+     {
         Console.WriteLine(travelling.Move(Name));
-    }
+     }
     
-}
+    }
 <p>2.2 </p>
 
 <b>TRAVELERFACTORY</b>
 
-abstract class TravelerFactory
-{
-
-    public abstract Traveler makingTraveler(string name);
-    
-}
+    abstract class TravelerFactory
+    {
+    public abstract Traveler makingTraveler(string name);  
+    }
 2.3
 TRAVEL
-abstract class Travel
-{
 
-    public abstract string Move(string name);
-    
-}
+      abstract class Travel
+     {
+      public abstract string Move(string name); 
+     }
 2.4
 WIZARD
 
-class Wizard : Traveler
-{
-
-   public Wizard(string name) : base(name)
-   {
-   
-       travelling = new Fly();
-       
-   }
-   
-}
+    class Wizard : Traveler
+    {
+      public Wizard(string name) : base(name)
+     {
+       travelling = new Fly();  
+     }
+    }
 
 2.5
 WARRIOR
 
-class Warrior : Traveler
-{
-
-    public Warrior(string name) : base(name)
+    class Warrior : Traveler
     {
+     public Warrior(string name) : base(name)
+     {
         travelling = new Horse();
+     }
     }
-    
-}
 2.6 
 ASSASSIN
 
@@ -138,59 +128,54 @@ KNIGHTFACTORY
 2.9
 
 ROGUEFACTORY
-class RogueFactory : TravelerFactory
-{
 
-    public override Traveler makingTraveler(string name)
+    class RogueFactory : TravelerFactory
     {
+      public override Traveler makingTraveler(string name)
+      {
         return new Assassin(name);
+      }  
     }
-    
-}
 2.10 
 FLY
-class Fly : Travel
-{
-
-    public override string Move(string name)
+     
+     class Fly : Travel
     {
+       public override string Move(string name)
+      {
         return $"{name} is soaring through the skies";
+      } 
     }
-    
-}
 2.11
 HORSE
-class Horse : Travel
-{
 
-    public override string Move(string name)
+    class Horse : Travel
     {
+      public override string Move(string name)
+      {
         return $"{name} is galloping on a horse through the forest.";
+      }  
     }
-    
-}
 2.12
 WALK
-class Walk : Travel
-{
 
-    public override string Move(string name)
+    class Walk : Travel
     {
+       public override string Move(string name)
+       {
         return $"{name} is manuevering through the forest.";
-    }
-    
-}
+       }
+     }
 
 
 <h2>SECTION 3</h2>
 
 2.13 PROGRAM
 
-class Program
-{
-
-    static void Main(string[] args)
+    class Program
     {
+      static void Main(string[] args)
+     {
         TravelerFactory wizarding = new MageFactory();
         Traveler merlin = wizarding.makingTraveler("Merlin");
         merlin.Journeying();
@@ -207,9 +192,8 @@ class Program
         merlin.ChangeRoute(new Walk());
         merlin.Journeying();
         Console.ReadLine();
+     }
     }
-    
-}
 
 <h2> CONCLUSION </h2>
 <p>This scenario shows the use of factory pattern and the strategy pattern in game development.</p> A flexible method of creating characters is offered by the factory pattern, whereas the strategy pattern focuses on the characters’ behaviour in its environment. By diving the creation of a character from its behaviour, this approach enhances testing and maintenance, reflecting important qualities for advanced software design in gaming.
