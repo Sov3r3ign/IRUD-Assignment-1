@@ -195,7 +195,7 @@ WALK
      }
     }
 
-<h2> CONCLUSION </h2>
+<h2> CONCLUSION 🗡️🌍</h2>
 <p>This scenario shows the use of factory pattern and the strategy pattern in game development.</p> A flexible method of creating characters is offered by the factory pattern, whereas the strategy pattern focuses on the characters’ behaviour in its environment. By diving the creation of a character from its behaviour, this approach enhances testing and maintenance, reflecting important qualities for advanced software design in gaming.
 
 
