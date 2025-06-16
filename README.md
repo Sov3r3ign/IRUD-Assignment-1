@@ -114,7 +114,7 @@ MAGEFACTORY
     
     }
 2.8 
-<b>KNIGHTFACTORY</b
+<b> KNIGHTFACTORY </b
  
      
      class KnightFactory : TravelerFactory
@@ -171,7 +171,7 @@ MAGEFACTORY
 
 <h2>SECTION 3</h2>
 
-2.13 <b>PROGRAM</b>
+2.13 <b> PROGRAM </b>
 
     class Program
     {
