@@ -28,7 +28,8 @@ This approach allows travellers to change their movement style whenever they wan
 
 <h2>SECTION 2</h2>
 
-<b> 2.1 TRAVELER </b>
+ 2.1
+ <b>TRAVELER </b>
 
     class Traveler
     {
@@ -113,7 +114,7 @@ MAGEFACTORY
     
     }
 2.8 
-KNIGHTFACTORY
+<b>KNIGHTFACTORY</b
  
      
      class KnightFactory : TravelerFactory
@@ -127,7 +128,7 @@ KNIGHTFACTORY
      }
 2.9
 
-ROGUEFACTORY
+<b>ROGUEFACTORY</b>
 
     class RogueFactory : TravelerFactory
     {
@@ -137,7 +138,7 @@ ROGUEFACTORY
       }  
     }
 2.10 
-FLY
+<b>FLY</b>
      
      class Fly : Travel
     {
@@ -147,7 +148,7 @@ FLY
       } 
     }
 2.11
-HORSE
+<b>HORSE</b
 
     class Horse : Travel
     {
@@ -157,7 +158,7 @@ HORSE
       }  
     }
 2.12
-WALK
+<b>WALK</b>
 
     class Walk : Travel
     {
@@ -170,7 +171,7 @@ WALK
 
 <h2>SECTION 3</h2>
 
-2.13 PROGRAM
+2.13 <b>PROGRAM</b>
 
     class Program
     {
